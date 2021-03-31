@@ -1,28 +1,28 @@
 body {
-  background-color: darkgrey;
+  background-color: #DAA520;
   overflow-x: hidden
 }
 
 h2{
   font-size: 20px;
   color: #fff;
-  font-family: 'Brush Script Std', cursive;
+  font-family: 'Old London Regular', cursive;
 }
 
 .container {
   display: flex;
   grid-template-columns: repeat(auto-fit, 100px);
   justify-content: space-between;
-  grid-row-gap: 5px;
+  grid-column-gap: 5px;
   grid-column-gap: 1%;
-  margin: 500px 10px 10px 1px;
-  width:30.4%;
+  margin: 350px 10px 10px 10px;
+  width:99%;  
 }
 
 .charbild{
   max-width: 100%;
-  width: 500px;
-  height: 300px;
+  width: px;
+  height: 900px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,7 +31,7 @@ h2{
 }
 
 .character {
-  width: 500px;
+  width: 1400px;
   border-radius: 10px;
   border-style: solid;
   border-color: #000;
@@ -39,21 +39,33 @@ h2{
   color: #fff;
 }
 .character:hover{
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0);
   color: black;
 }
- .sektion {
-  position: fixed;
-  width: 100%;
+
+.yttre {
+  max-width: 90%;
+  position: absolute;
   top: 10px;
-  left: 570px;
+  left: 405px;
+}
+
+ .sektion {
+   left: 50px;
+   width: 1500px;
 }
 
 .sektion h1{
-  width: 50%;
+  width: 70%;
   border-style: solid;
   text-align: center;
-  font-size: 7rem;
+  font-size: 9em;
   font-family: 'American Typewriter', serif;
   background: #fff;
 }
+
+@media (min-aspect-ratio: 600px ) {
+  body {
+    width: 100%;
+    height: auto;
+  }
